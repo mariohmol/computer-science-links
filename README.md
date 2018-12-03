@@ -29,6 +29,10 @@ Public Key
 * [Tree](js/tree.js)
 * [Bitjs](js/bitsinjs.js)
 
+## Code Challenges
+
+* http://leetcode.com
+
 # Design
 
 * https://www.sketchappsources.com/tag/kit.html
