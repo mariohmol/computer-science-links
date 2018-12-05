@@ -1,3 +1,76 @@
+/*
+Callbacks x Promises x await
+*/
+
+// CALLBACKS
+console.log('main')
+x = 10
+setTimeout(()=>{
+  console.log('tim1')
+  setTimeout(()=>{
+    console.log('tim3', x)
+    console.log('tim3 ends', x)
+  }, 2000);
+  console.log('tim1 ends')
+}, 1000);
+
+
+setTimeout(()=>{
+  console.log('tim2')
+  setTimeout(()=>{
+    console.log('tim4', x)
+    console.log('tim4 ends', x)
+  }, 2000);
+  console.log('tim2 ends')
+}, 1000);
+
+console.log('main ends')
+// console.log(module)
+// console.log(require.main)
+console.log(require.main === module)
+// require.main === module
+
+// Event Loop
+// main   tim1, tim2
+// tim1   tim2, tim3
+// tim2   tim3, tim4
+// tim3   tim4
+// tim4   ---
+// ends
+
+
+//PROMISES
+setTimeoutP = async (time) => new Promise(  (resolve, reject)=> setTimeout(resolve, time) );
+
+console.log('main')
+x = 10
+
+setTimeoutP(1000)
+.then(()=>{
+  console.log('tim1')
+  return setTimeoutP(2000);
+})
+.then(()=>{
+  console.log('tim3', x)
+})
+
+
+// AWAIT
+const myfunc  = async () => {
+  const answer1 = await setTimeoutP(1000);
+  console.log('1');
+  const answer2 = await setTimeoutP(2000);
+  console.log('2');
+};
+
+myfunc();
+
+
+
+
+
+
+
 'use strict';
 
 const chai = require('chai');
