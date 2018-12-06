@@ -82,6 +82,10 @@ Public Key
 * https://coderwall.com/p/ayb_la/travis-ci-and-mongodb
 
 
-# Others
 
-* [promises](js/promises.js)
+
+
+# Programmiing
+
+* [Destructuring](js/code/destructuring.js)
+* [promises](js/code/promises.js)
