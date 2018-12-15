@@ -3,7 +3,7 @@ Array with 10 spaces:
 H is the HEAD
 */
 [  0  1  2  3  4  5  6  7  8  9    10 ] // Memory positions - where pointer points to
-[  H, 0, 0, 0, 0, 0, 0, 0, 0, 0   , 0 ] // ptr = null - empty memory
+[  H, 0, 0, 0, 0, 0, 0, 0, 0, 0   , 0 ] // ptr = null, head = 0 - empty memory
 [  A, H, 0, 0, 0, 0, 0, 0, 0, 0   , 0 ] // push A - ptr=0, length=1, head=1
 [  A, A, B, H, 0, 0, 0, 0, 0, 0   , 0 ] // push B - ptr=1, length=2, head=3
 [  A, A, B, A, B, C, H, 0, 0, 0   , 0 ] // push C - ptr=3, length=3, , head=6
@@ -17,6 +17,7 @@ ptr is the same =3 , and length will be 2
 
 Ex. with ratio x 3 
 */
+[  0  1  2  3  4  5  6  7  8  9] // Memory positions - where pointer points to
 [  H, 0, 0, 0, 0, 0, 0, 0, 0, 0] //empty memory
 [  1, 0, 0, H, 0, 0, 0, 0, 0, 0] //ad
 [  1, 2, 0, H, 0, 0, 0, 0, 0, 0] //
