@@ -7,6 +7,14 @@
 function setBit3(x){  return x|4 }
 function toggleBit3(x){  return x^4 }
 
+// Check if the third bit is set: 0100 = 4
+(20 & 4) === 4 // true
+(16 & 4) === 4 // false
+
+// If is even or odd
+(20 & 1) === 1 // false
+(19 & 1) === 1 // true
+
 /**
 SUM:
 
