@@ -1,27 +1,53 @@
+// Linkedin Lis with 4 -> 5 -> 6 -> null
 var head = {
-            value: 4, 
-            next: { value: 5, 
-                   next: {
-                     value: 6, 
-                     next: null
-                   }
-                  }
-            };
+    value: 4, 
+    next: { 
+           value: 5, 
+           next: {
+                value: 6, 
+                next: null
+                }
+          }
+    };
 
 
+// Linkedin List using pointers style with 4 -> 5 -> 6 -> null
+var tail = {
+    value: 6, 
+    next: null
+};
 
-var last = {
-             value: 6, 
-             next: null
-           };
-var middle = { value: 5, 
-             next: last
-            };
+var middle = { 
+    value: 5, 
+    next: last
+};
+
 var head = {
-            value: 4, 
-            next: middle
-            };
+    value: 4, 
+    next: middle
+};
 
+
+
+
+// Double Linkedin List using pointers style with 4 -> 5 -> 6 -> null
+var tail = {
+    value: 6, 
+    next: null,
+    prev: middle
+};
+
+var middle = { 
+    value: 5, 
+    next: last,
+    prev: head
+};
+
+var head = {
+    value: 4, 
+    next: middle,
+    prev: null
+};
 
 //couting the size
 var node = head;
