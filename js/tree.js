@@ -19,7 +19,20 @@ let sortTree= function(node,depth){
 sortTree(root,0);
 console.log(elements[-3])
 
+findHeight(node, depth){
+         if(!node){
+                  return depth;
+         }
+       const left =  findHeight(node.left, depth +1);
+       const right =  findHeight(node.right, depth +1);
+         if(left>right){
+                  return left;
+         }else{
+                 return right;
+         }
+}
 
+const height = findHeight(root,0);
 
 /*
 Normal Binary Tree - BFS
