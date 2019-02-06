@@ -116,3 +116,34 @@ const chain = promise1
   .then((response) => {
     console.log(3);
   });
+
+
+// Promises lifecycle
+console.log('before promise');
+
+const q = new Promise( (resolve, reject)=>{
+    setTimeout(()=>{
+        console.log('inside promise');
+        if(Math.random()>0.5){
+            resolve();
+        }else{
+            reject();
+        }
+        
+    }, 2000);
+});
+console.log('after promise');
+
+q
+.then(()=>{
+    console.log(' promise resolved');
+    //loop passing all tests
+})
+.catch(()=>{
+    console.log(' promise rejected');
+})
+
+// before
+// after
+// inside
+// resolved

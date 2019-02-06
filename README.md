@@ -14,12 +14,13 @@ Visualizations:
 
 * https://www.youtube.com/watch?v=ywWBy6J5gz8&t=3s
 
-## Cryptpgraphy
+## Cryptography
 
 Public Key
 
 * https://www.youtube.com/watch?v=YEBfamv-_do
 
+[JWT](./docs/Auth.md)
 
 ## Data Strucutres
 
