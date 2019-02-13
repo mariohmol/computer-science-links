@@ -67,6 +67,7 @@ Public Key
 * threejs.org
 * d3js.org
 * https://d3plus.org/
+* https://vis.gl/ (https://uber.github.io/)
 
 # Database
 
