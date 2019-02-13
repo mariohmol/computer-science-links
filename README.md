@@ -98,3 +98,12 @@ Public Key
 ## Websites
 
 * http://adventofcode.com
+
+
+## Chat Bot
+
+* https://rasa.ai/
+* https://github.com/gunthercox/ChatterBot
+* https://github.com/alfredfrancis/ai-chatbot-framework
+* http://blog.apcelent.com/create-a-facebook-messenger-bot-with-python-flask.html
+* https://messenger.fb.com/
