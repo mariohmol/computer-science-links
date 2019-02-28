@@ -2,6 +2,7 @@
 
 Computer Science usefull links
 
+Hints: https://github.com/rstacruz/cheatsheets
 
 # Algorithms 
 
