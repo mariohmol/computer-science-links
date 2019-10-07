@@ -56,12 +56,12 @@ Public Key
 * https://coolors.co/
 * https://www.materialpalette.com/
 
-## Css
+## CSS
 
 * https://materializecss.com/
 * https://material-ui.com/
 * https://material.angular.io/
-
+* Clip Path https://bennettfeely.com/clippy/
 
 # Visualizations
 
