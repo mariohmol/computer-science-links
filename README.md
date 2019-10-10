@@ -86,6 +86,10 @@ Public Key
 * https://github.com/lelandrichardson/redux-pack
 * https://github.com/mobxjs/mobx
 
+React vs Angular vs VueJS
+
+* https://www.youtube.com/watch?v=KMX1mFEmM3E&list=WL&index=10&t=4s
+
 # Travis
 
 * https://docs.travis-ci.com/user/deployment/heroku/
