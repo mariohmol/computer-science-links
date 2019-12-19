@@ -35,6 +35,7 @@ Public Key
 
 * http://leetcode.com
 * adventOfCode.com
+* Cheatsheet https://devhints.io/
 
 # Design
 
