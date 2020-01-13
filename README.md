@@ -64,6 +64,10 @@ Public Key
 * https://material.angular.io/
 * Clip Path https://bennettfeely.com/clippy/
 
+FLEXBOX:
+* https://flexboxfroggy.com/
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 # Visualizations
 
 * threejs.org
