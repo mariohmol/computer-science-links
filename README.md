@@ -57,6 +57,10 @@ Public Key
 * https://coolors.co/
 * https://www.materialpalette.com/
 
+## Fonts
+
+* https://fontpair.co/
+
 ## CSS
 
 * https://materializecss.com/
