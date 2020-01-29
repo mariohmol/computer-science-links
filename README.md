@@ -37,6 +37,10 @@ Public Key
 * adventOfCode.com
 * Cheatsheet https://devhints.io/
 
+## API
+
+* https://github.com/public-apis/public-apis
+
 # Design
 
 * https://www.sketchappsources.com/tag/kit.html
