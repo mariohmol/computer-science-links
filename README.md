@@ -94,6 +94,10 @@ FLEXBOX:
 * https://zellwk.com/blog/crud-express-mongodb/
 * https://devhints.io/knex
 
+# Linux
+
+* https://cmdchallenge.com/#/hello_world
+
 # React
 
 * https://github.com/lelandrichardson/redux-pack
