@@ -46,7 +46,7 @@ Public Key
 
 ## Express
 
-See an simple example [here](code/express.js)
+See an simple example [here](js/code/express.js)
 
 # Design
 
