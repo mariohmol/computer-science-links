@@ -1,4 +1,7 @@
-app = express() //creates a new express app
+// npm i express - 
+// Same as import React from 'react' -> ES6
+const express = require('express'); // require -> ES5
+app = express() // creates a new express app ( HTTP Server )
 
 //get - method , // path route   
 // endpoint = '/folders'
@@ -17,11 +20,13 @@ app.get('/folders', (req,res) => {
             id: 1,
             name: 'myfolder'
         }
-    ])
+    ]) // 200
 })
 
 app.delete()
-app.post()
+app.post('/folder', (req,res)=>{
+    res.status(201).json({}); // .send() -> text
+})
 app.put()
 
 app.listen(8080) // http://localhost:8080 - For specific domain, configure under your VPS (Virtual Private Server)
