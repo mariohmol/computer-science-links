@@ -12,7 +12,9 @@ app.get('/folders', (req,res) => {
     }
 
     // req.query = { id: 1, sort: 'name' }
-    const id = req.query.id;    
+    const id = req.query.id; 
+    console.log(id);
+    
     const sort = req.query.sort; 
     console.log(id, sort);
     res.json([
