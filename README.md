@@ -48,6 +48,8 @@ Public Key
 
 See an simple example [here](js/code/express.js)
 
+Testing with chai and supertest [here](js/code/express.test.js)
+
 # Design
 
 * https://www.sketchappsources.com/tag/kit.html
