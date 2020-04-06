@@ -55,6 +55,11 @@ Testing with chai and supertest [here](js/code/express.test.js)
 * https://www.sketchappsources.com/tag/kit.html
 * https://land-book.com/gallery/landings
 
+## Icons
+
+* https://icons8.com/app
+* https://convertio.co/pt/png-ico/
+
 ## Mock
 
 * https://ninjamock.com/
