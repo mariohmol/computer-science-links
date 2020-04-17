@@ -65,3 +65,26 @@ for(j=0;j<n;j++){    // n
     i+=2;              // 1
   }
 }
+
+function checkParentesis(str) {
+    const letters = str.split('')
+    let close = 0;
+    let open = 0;
+    for (let i = 0; i < letters.length; i++) {
+        const letter = letters[i]
+        if(letter == '(') {
+            open++
+        }
+        if(letter == ')' && open == 0) {
+            return false;
+        }
+        if (letter == ')') {
+            open--
+        }
+    }
+    return open == 0;
+}
+
+checkParentesis('a + b*(a +1)') // true
+checkParentesis('a + b*(a +1') // false
+checkParentesis(')a + b*(a +1)(') // false
