@@ -250,6 +250,8 @@ Aviação "executiva":
 
 # Dev
 
+Good page to learn coding: https://scrimba.com/
+
 * bitbucket
 * jenkins
 * nodejs
