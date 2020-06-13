@@ -85,6 +85,7 @@ Testing with chai and supertest [here](js/code/express.test.js)
 * https://material-ui.com/
 * https://material.angular.io/
 * Clip Path https://bennettfeely.com/clippy/
+* https://css-tricks.com/almanac/properties/f/float/
 
 FLEXBOX:
 * https://flexboxfroggy.com/
