@@ -1,8 +1,5 @@
-# Searching
+// # Searching
 
-Searching
-
-```js
 const tree = {
   value: 8
   right: { value: 5},
@@ -21,7 +18,7 @@ function preOrder(node){
 preOrder(tree)
 
 
-In Order
+// In Order
 function inOrder(node){
   if(!node){
     return;
@@ -32,7 +29,7 @@ function inOrder(node){
   inOrder(node.right)
 }
 
-Pos Order
+// Pos Order
 function posOrder(node){
   if(!node){
     return;
@@ -42,14 +39,14 @@ function posOrder(node){
   posOrder(node.right);
   console.log(node.value);
 }
-```
 
+
+
+
+/**
 ## Exercises
 
 //https://en.wikipedia.org/wiki/List_of_Dewey_Decimal_classes
-
-/**
-
 Contents  [hide] 
 1	Class 000 – Computer science, information & general works
 2	Class 100 – Philosophy & psychology
