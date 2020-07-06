@@ -1,3 +1,51 @@
+# Searching
+
+Searching
+
+```js
+const tree = {
+  value: 8
+  right: { value: 5},
+  left: { value: 5}
+}
+
+// Pre Order 
+function preOrder(node){
+  if(!node){
+    return;
+  }
+  console.log(node.value);
+  preOrder(node.left);
+  preOrder(node.right)
+}
+preOrder(tree)
+
+
+In Order
+function inOrder(node){
+  if(!node){
+    return;
+  }
+  
+  inOrder(node.left);
+  console.log(node.value);
+  inOrder(node.right)
+}
+
+Pos Order
+function posOrder(node){
+  if(!node){
+    return;
+  }
+  
+  posOrder(node.left);
+  posOrder(node.right);
+  console.log(node.value);
+}
+```
+
+## Exercises
+
 //https://en.wikipedia.org/wiki/List_of_Dewey_Decimal_classes
 
 /**
