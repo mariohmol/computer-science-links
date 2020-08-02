@@ -11,6 +11,10 @@ Visualizations:
 * https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 * https://visualgo.net/
 
+## Books
+
+* https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246/ref=sr_1_2?crid=1TZ2E4XJNSYFD&dchild=1&keywords=think+like+a+programmer&qid=1596388434&sprefix=think+like+a+pro%2Caps%2C153&sr=8-2
+
 ## Sorting 
 
 * https://www.youtube.com/watch?v=ywWBy6J5gz8&t=3s
