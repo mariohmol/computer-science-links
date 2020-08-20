@@ -2,13 +2,65 @@
 var head = {
     value: 4, 
     next: { 
-           value: 5, 
-           next: {
-                value: 6, 
-                next: null
-                }
-          }
-    };
+       value: 5, 
+       next: {
+            value: 6, 
+            next: null
+        }
+   }
+};
+
+function printLinkedLists(node){
+    while(node){
+        console.log(value);
+        node = node.next;
+    }
+}
+
+printLinkedLists(head)
+
+// STACK 
+// H = 4                    insert(4)   
+// H = 5 -> 4               insert(5)
+// H = 6 -> 5 -> 4          insert(6)
+
+
+// QUEUE
+// H = 4                    insert(4)   
+// H = 4 -> 5               insert(5)
+// H = 4 -> 5 -> 6          insert(6)
+
+
+
+class LinkedList {
+    head = null;
+
+    insertBefore(value){
+        if(this.head){
+            this.head = { value, next: this.head };
+        }else{
+            this.head = { value, next: null };
+        }
+    }
+
+    insertLast(value){
+        if(this.head){
+            let node = head;
+            while(node.next){ node = node.next }
+            node.next = { value, next: null };
+        }else{
+            this.head = { value, next: null };
+        }
+    }
+}
+
+const myLinkedList = new LinkedList();
+myLinkedList.insertBefore(4)
+myLinkedList.insertBefore(5)
+myLinkedList.insertBefore(6)
+printLinkedLists(myLinkedList)
+
+
 
 
 // Linkedin List using pointers style with 4 -> 5 -> 6 -> null
