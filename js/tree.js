@@ -1,3 +1,5 @@
+// PURE JS
+
 var root={value: 8};
 root.left={value: 3};
 root.right={value: 10};
@@ -7,6 +9,14 @@ root.right.right={value: 14};
 
 var total=0;
 var elements=[];
+
+
+//CLASS
+
+
+
+
+// METHODS
 let sortTree= function(node,depth){  
          if(!node) return depth;
          depth++;
@@ -82,3 +92,98 @@ function getStockes(node){
 }
 
 getStockes(root)
+
+
+//class
+
+
+// class Node {
+//     constructor(value, right, left) {
+//         this.value = value;
+//         this.left = left;
+//         this.right = right;
+//     }
+
+//      insert(value) {
+//         const newNode = new Node(value);
+//         if (this.value) {
+//             if (value > this.value.value) {
+//                 if (this.right) {
+//                     this.right.insert(value);
+//                 } else {
+//                     this.right = newNode;
+//                 }
+//             } else {
+//                 if (this.left) {
+//                     this.left.insert(value);
+//                 } else {
+//                     this.left = newNode;
+//                 }
+//             }
+//         } else {
+//             this.value = vakye;
+//         }
+//     }
+// }
+
+
+// const tree = new Node('mario'); // Root Node
+// tree.left = new Node('garret');
+// tree.right = new Node('john');
+
+
+// // class Tree {
+
+// //     root = null;
+
+   
+
+// // }
+
+// const objTree = new Node();
+// objTree.insert(5);
+// objTree.insert(3);
+// objTree.insert(8);
+// objTree.insert(2);
+// objTree.insert(9);
+
+// console.log(objTree.root)
+
+
+
+var root={value: 8};
+root.left={value: 3};
+root.right={value: 10};
+root.left.left={value: 1};
+root.left.right={value: 6};
+root.right.right={value: 14};
+
+function preOrder(node){
+    if(!node){
+        return;
+    }
+    console.log(node.value)
+    preOrder(node.left);
+    preOrder(node.right);
+}
+// preOrder(root)
+
+function inOrder(node){
+    if(!node){
+        return;
+    }
+    inOrder(node.left);
+    console.log(node.value)
+    inOrder(node.right);
+}
+// inOrder(root);
+
+function posOrder(node){
+    if(!node){
+        return;
+    }
+    posOrder(node.left);
+    posOrder(node.right);
+    console.log(node.value);
+}
+posOrder(root)
