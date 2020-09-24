@@ -41,6 +41,8 @@ Public Key
 * adventOfCode.com
 * Cheatsheet https://devhints.io/
 * https://edabit.com/challenges
+* coderbyte.com
+* codewars.com
 
 ## API
 
