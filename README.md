@@ -154,7 +154,9 @@ React vs Angular vs VueJS
 * http://blog.apcelent.com/create-a-facebook-messenger-bot-with-python-flask.html
 * https://messenger.fb.com/
 
+## VSCODE
 
+* Error lens
 
 
 # to-every-startup
@@ -176,6 +178,7 @@ Links useful to every startup
 * https://outboundmarketing.com.br/
 * http://webholic.com.br/
 * http://www.agenciamestre.com/blog
+
 
 
 ## Comercial
