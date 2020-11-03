@@ -79,6 +79,31 @@ root.left.right.left.right={value: 105};
 
 */
 
+
+// BUILD TREES with ARRAYS
+function buildTReeWithArrays(){
+         input = [3,6,1,5,4,0,2]
+         results = new Array(input.length)   
+         for(i=0;i<input.lenght; i++){
+             const number = input[i];
+
+             start = 0 
+             end = input.lenght = 7
+             while(start < end){
+                 middle = (start + end)/2
+                 if(!results[middle]){
+                     results[middle] = number
+                     break;
+                 }else if(number > results[middle]){{
+                     start = middle
+                 } else { 
+                     end = middle
+                 }
+             }
+         }
+         
+}
+
 function getStockes(node){
     if(node.right) {
               maxValue= getStockes(node.right);
