@@ -84,13 +84,13 @@ root.left.right.left.right={value: 105};
 function buildTReeWithArrays(){
          input = [3,6,1,5,4,0,2]
          results = new Array(input.length)   
-         for(i=0;i<input.lenght; i++){
+         for(i=0;i<input.length; i++){
              const number = input[i];
 
-             start = 0 
-             end = input.lenght = 7
+             let start = 0 
+             let end = input.length = 7
              while(start < end){
-                 middle = (start + end)/2
+                 let middle = Math.floor((start + end)/2)
                  if(!results[middle]){
                      results[middle] = number
                      break;
@@ -101,6 +101,7 @@ function buildTReeWithArrays(){
                  }
              }
          }
+         return results;
          
 }
 
