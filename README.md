@@ -125,6 +125,8 @@ FLEXBOX:
 * https://github.com/lelandrichardson/redux-pack
 * https://github.com/mobxjs/mobx
 
+* https://www.udemy.com/course/react-for-the-rest-of-us/
+
 React vs Angular vs VueJS
 
 * https://www.youtube.com/watch?v=KMX1mFEmM3E&list=WL&index=10&t=4s
