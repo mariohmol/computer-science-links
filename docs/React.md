@@ -15,9 +15,28 @@ Modules:
 
 # State
 
-Hooks
+Oficial doc:
+* https://reactjs.org/docs/state-and-lifecycle.html
+
+Read:
+* https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/
+
+Exercise:
+* https://github.com/evyros/react-state-exercises
+
+## Event Handler
+
+* https://reactjs.org/docs/handling-events.html
+
+Exercise:
+* https://reactjs.org/docs/handling-events.html
+
+## Hooks
 
 * https://reactjs.org/docs/hooks-intro.html
+
+Exercise:
+* https://www.freecodecamp.org/news/hooked-on-hooks-how-to-use-reacts-usereducer-2fe8f486b963/
 
 Global Hooks
 
