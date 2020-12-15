@@ -5,7 +5,12 @@
 
 # Forms
 
+Easy:
+* https://dev.to/brettblox/react-hooks-usereducer-4g3m
+
+Modules:
 * https://react-hook-form.com/api/#FormContext
+
 * https://reactjs.org/docs/forms.html#handling-multiple-inputs
 
 # State
