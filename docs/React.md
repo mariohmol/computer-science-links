@@ -1,4 +1,23 @@
 
+
+# Environment
+
+Install nodejs:
+* https://nodejs.org/en/download/
+* https://medium.com/javascript-in-plain-english/how-to-use-npm-and-import-export-modules-in-javascript-31a7f66a2064
+
+
+Official docs:
+* https://reactjs.org/docs/getting-started.html
+
+Folder Structure:
+* https://www.javaguides.net/2020/08/reactjs-tutorial-for-beginners-3-folder-structure.html
+
+JSX:
+* https://reactjs.org/docs/introducing-jsx.html
+* https://reactjs.org/docs/jsx-in-depth.html
+
+
 # Components
 
 * https://reactjs.org/docs/fragments.html
@@ -49,6 +68,10 @@ Global Hooks with Provider separated:
 Reducers:
 
 * https://react.christmas/2019/7
+
+## Validations
+
+* https://reactjs.org/docs/error-boundaries.html
 
 
 # Tutorials
