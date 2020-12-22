@@ -73,6 +73,11 @@ Reducers:
 
 * https://reactjs.org/docs/error-boundaries.html
 
+# Test
+
+* https://reactjs.org/docs/test-renderer.html
+* https://www.valentinog.com/blog/testing-react/
+
 # Portals
 
 * https://reactjs.org/docs/portals.html
