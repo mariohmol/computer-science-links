@@ -78,6 +78,13 @@ Reducers:
 * https://reactjs.org/docs/test-renderer.html
 * https://www.valentinog.com/blog/testing-react/
 
+
+
+## Smoke
+
+https://reactrouter.com/web/api/MemoryRouter
+https://medium.com/@mrsamczynski/react-router-memoryrouter-a-how-to-guide-a496318bf981
+
 # Portals
 
 * https://reactjs.org/docs/portals.html
