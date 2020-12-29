@@ -1,3 +1,6 @@
+# Mac environment
+
+A cheatsheet with step by ste to configure a Mac OS from the scratch with the best tools for development.
 
 Install brew
 * https://brew.sh
@@ -19,18 +22,39 @@ Install VSCode
 https://code.visualstudio.com/Download
 
 
-Ruby
+## Ruby
 
 RVM
 https://rvm.io/rvm/install
 
 
+
+
 App Store
-Xcode
-The Unarchiver
+* Xcode
+* The Unarchiver
 
 
-MAC
+## Databases
+
+**Postgres**
+`brew install postgres`
+
+```sh
+To have launchd start postgresql now and restart at login:
+  brew services start postgresql
+Or, if you don't want/need a background service you can just run:
+  pg_ctl -D /usr/local/var/postgres start
+```
+
+**Mongo**
+`brew install mongo`
+
+**MySQL**
+
+
+## Dev
+
 https://www.sourcetreeapp.com/
 
 
