@@ -21,7 +21,7 @@ Install Node:
 * https://nodejs.org/en/download/
 
 Install useful node libs:
-sudo npm i -g ts-node nodemon
+* `sudo npm i -g ts-node nodemon`
 
 **Utils**
 brew install wget
@@ -50,6 +50,14 @@ Install the Dart and Flutter Plugin for VSCode.
 ## Android
 
 * https://developer.android.com/studio
+
+## Java
+
+Install JSE 8 
+* https://www.oracle.com/java/technologies/javase-jre8-downloads.html
+
+Or JDK:
+ * https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
 
 ## App Store
 
@@ -102,8 +110,11 @@ https://www.sourcetreeapp.com/
 
 ## Misc
 
-Spotify
+Spotify: Listen to music
 * http://download.spotify.com/Spotify.dmg
+
+Gimp: Manipulate images
+* `brew install gimp`
 
 
 
