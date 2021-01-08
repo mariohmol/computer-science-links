@@ -50,6 +50,7 @@ Install the Dart and Flutter Plugin for VSCode.
 ## Android
 
 * https://developer.android.com/studio
+* `brew install bundletool`
 
 ## Java
 

@@ -22,3 +22,9 @@ Auth:
 Knex to connect and manage database
 * https://devhints.io/knex
 
+
+# Express
+
+
+Database:
+* https://wdi-sg.github.io/gitbook-2019/04-databases/postgres/CRUD-postgres.html
