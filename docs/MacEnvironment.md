@@ -1,6 +1,6 @@
 # Mac environment
 
-A cheatsheet with step by ste to configure a Mac OS from the scratch with the best tools for development.
+A cheatsheet with step by step to configure a Mac OS from the scratch with the best tools for development. Teste on latest Big Sur Osx.
 
 Install brew
 * https://brew.sh
@@ -34,6 +34,11 @@ RVM
 Then install the ruby use: 
 `rvm install 2.6.3`
 
+If you have issues installing rubies:
+*  `zlib missing`: do the Xcode steps (install Command Line Tools).
+* `openssl missing`:  `brew install rbenv/tap/openssl@1.0` and `RUBY_CONFIGURE_OPTS=--with-openssl-dir=/usr/local/Cellar/openssl@1.1/1.1.1i/ rvm reinstall 2.1`
+
+
 ## Flutter
 
 Use the [official docs](https://flutter.dev/docs/get-started/install/macos)or download, unzip and add in your path:
@@ -52,6 +57,12 @@ Install the Dart and Flutter Plugin for VSCode.
 * https://developer.android.com/studio
 * `brew install bundletool`
 
+Add paths to profile:
+```sh
+echo 'export ANDROID_HOME=/Users/$USER/Library/Android/sdk' >> ~/.bashrc
+echo 'export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools/28.0.3' >> ~/.bashrc
+```
+
 ## Java
 
 Install JSE 8 
@@ -62,14 +73,18 @@ Or JDK:
 
 ## App Store
 
+* The Unarchiver
 * Xcode
+
+```sh
 sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
 sudo xcodebuild -runFirstLaunch
 sudo gem install cocoapods
+```
 
+Install the Command Lines for Xcode in [Downloads Page](https://developer.apple.com/download/more/?=xcode)
+* https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12.3/Command_Line_Tools_for_Xcode_12.3.dmg
 
-
-* The Unarchiver
 
 
 ## Databases
@@ -100,12 +115,32 @@ RoboMongo
 **MySQL**
 `brew install mysql`
 
+To start the service use `brew services start mysql` e para conectar via console `mysql -uroot`
+
 MySQLWorkbench:
 * https://dev.mysql.com/downloads/workbench/
 
 
+For older versions: install `brew install mysql@5.7`, `brew postinstall mysql@5.7` and 
+`brew services start mysql@5.7`.
+If you need the paths, run `brew info mysql@5.7` to get the info.
+For config go to: `/usr/local/etc/my.cnf`
+
+If you have problems with installation, password or anything else, try this process:
+```sh
+brew remove mysql@5.7
+brew cleanup
+rm -rf /usr/local/var/mysql
+brew install mysql@5.7
+rm -rf /usr/local/var/mysql
+mysqld --initialize
+mysql_secure_installation -uroot -p"pass_generated_before"
+```
+
+
 ## Dev
 
+Git:
 https://www.sourcetreeapp.com/
 
 
@@ -117,8 +152,17 @@ Spotify: Listen to music
 Gimp: Manipulate images
 * `brew install gimp`
 
+Network:
+Test ports used by services like mysql, for instance:
+* nc -v localhost 3306
 
 
+Updatedb:
+Configure the files indexing to find files easy:
+* `sudo /usr/libexec/locate.updatedb`
+
+If you want, creat a linke to use like linux `updatedb`:
+* `sudo ln -s /usr/libexec/locate.updatedb /usr/local/bin/updatedb`
 
 
 
