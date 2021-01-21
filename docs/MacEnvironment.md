@@ -35,8 +35,26 @@ Then install the ruby use:
 `rvm install 2.6.3`
 
 If you have issues installing rubies:
-*  `zlib missing`: do the Xcode steps (install Command Line Tools).
+* `zlib missing`: do the Xcode steps (install Command Line Tools).
 * `openssl missing`:  `brew install rbenv/tap/openssl@1.0` and `RUBY_CONFIGURE_OPTS=--with-openssl-dir=/usr/local/Cellar/openssl@1.1/1.1.1i/ rvm reinstall 2.1`
+To test use: `ruby -ropenssl -e 'puts OpenSSL::OPENSSL_VERSION'`
+TO test zlib we can do: `ruby -e'require "zlib"'`
+
+----
+
+With the Mac BigSur, you will have issues installing old rubies.
+You can sintall openssl using `rvm pkg install openssl`.
+You can set the autolibs on with homebre: `rvm autolibs enable` and `rvm autolibs homebrew`
+
+First you can try to find the paths for zlib/openssl using `brew info openssql` or force the link with openssl: `brew link --force openssl`;
+
+```sh
+export LDFLAGS="-L/usr/local/opt/openssl@1.0/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.0/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.0/lib/pkgconfig"
+export optflags="-Wno-error=implicit-function-declaration"
+rvm_rubygems_version=2.7.3 rvm reinstall ruby-2.2.10 --with-openssl-dir=/usr/local/Cellar/openssl@1.0/1.0.2t --with-openssl-lib=/usr/local/Cellar/openssl@1.0/1.0.2t/lib --with-openssl-include=/usr/local/Cellar/openssl@1.0/1.0.2t/include
+```
 
 
 ## Flutter
@@ -55,10 +73,16 @@ Install the Dart and Flutter Plugin for VSCode.
 ## Android
 
 * https://developer.android.com/studio
-* `brew install bundletool`
+* `brew install bundletool android-platform-tools`
+
+Instruction for adding into [MacOS environment](https://docs.expo.io/workflow/android-studio-emulator/).
+
 
 Add paths to profile:
 ```sh
+
+ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
+
 echo 'export ANDROID_HOME=/Users/$USER/Library/Android/sdk' >> ~/.bashrc
 echo 'export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools/28.0.3' >> ~/.bashrc
 ```
@@ -68,8 +92,8 @@ echo 'export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools/28.0.3' 
 Install JSE 8 
 * https://www.oracle.com/java/technologies/javase-jre8-downloads.html
 
-Or JDK:
- * https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
+Install JDK using the dmg installer in [JDK download page](https://www.oracle.com/java/technologies/javase-jdk15-downloads.html)
+
 
 ## App Store
 
@@ -104,7 +128,17 @@ Install [Dbvear](https://dbeaver.io/download/) to manage postgres:
 
 
 **Mongo**
-`brew install mongo`
+
+```sh
+brew tap mongodb/brew
+brew install mongodb-community
+brew services start mongodb-community
+```
+
+if you don't want/need a background service you can just run:
+  `mongod --config /usr/local/etc/mongod.conf`
+
+Database location is `/usr/lobal/var/mongodb` (be confirmed by `brew cat mongodb-comunnity`).
 
 MongoCompass:
 * https://www.mongodb.com/try/download/compass
