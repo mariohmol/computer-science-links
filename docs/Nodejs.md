@@ -1,3 +1,8 @@
+Basic nodejs lessons:
+
+* http://nicholasjohnson.com/node/course/exercises/
+
+
 # Auth
 
 * https://www.digitalocean.com/community/tutorials/nodejs-jwt-expressjs
