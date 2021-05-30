@@ -64,18 +64,18 @@ printLinkedLists(myLinkedList)
 
 // ----
 
-var head = {
-    value: 4,
+const head = {
+    value: 'A',
 };
 
-middle =  { 
-    value: 5
+const middle =  { 
+    value: 'bSS'
 };
 
 head.next = middle
 
-var tail = {
-    value: 6
+const tail = {
+    value: 'GG'
 };
 
 middle.next = tail;
