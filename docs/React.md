@@ -53,6 +53,56 @@ Exercise:
 Exercise:
 * https://reactjs.org/docs/handling-events.html
 
+
+
+----
+
+## React Hooks
+
+Explain the basics concepts of the Hooks functions for the React Router
+* https://react-hooks-cheatsheet.com/
+
+Explain with examples:
+* https://blog.logrocket.com/react-hooks-cheat-sheet-unlock-solutions-to-common-problems-af4caf699e70/
+
+
+React API
+* https://blog.logrocket.com/react-reference-guide-hooks-api/
+*
+
+## React Router
+
+ Intro: https://coursework.vschool.io/react-router/
+
+### Router/ Switch / Route / Link / NavLink
+
+* https://www.code-boost.com/react-router-intro/
+
+First assignment: https://thinkster.io/tutorials/fundamentals-of-react-routing-with-react-router/exercise-broken-routing
+
+### Route params: 
+
+**Optional Params** https://www.digitalocean.com/community/tutorials/react-react-router-optional-parameters
+**Params v4 vs v5** https://reactgo.com/react-get-url-params/
+
+
+* Route History
+* Nested Routes
+
+
+Assignment:
+https://restcountries.eu/
+
+* React Rouer: Hooks 
+** https://blog.logrocket.com/using-hooks-with-react-router/
+
+* 
+Deploy
+React Router App
+
+
+
+
 ## Hooks
 
 * https://reactjs.org/docs/hooks-intro.html

@@ -62,6 +62,28 @@ printLinkedLists(myLinkedList)
 
 
 
+// ----
+
+const head = {
+    value: 'A',
+};
+
+const middle =  { 
+    value: 'bSS'
+};
+
+head.next = middle
+
+const tail = {
+    value: 'GG'
+};
+
+middle.next = tail;
+
+
+
+
+
 
 // Linkedin List using pointers style with 4 -> 5 -> 6 -> null
 var tail = {
@@ -71,7 +93,7 @@ var tail = {
 
 var middle = { 
     value: 5, 
-    next: last
+    next: tail
 };
 
 var head = {
@@ -91,7 +113,7 @@ var tail = {
 
 var middle = { 
     value: 5, 
-    next: last,
+    next: tail,
     prev: head
 };
 

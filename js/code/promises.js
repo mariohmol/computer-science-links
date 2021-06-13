@@ -1,3 +1,35 @@
+// simple
+
+//ES5 - callback
+function call(){
+    return axios(resp=>{ res.data }, error=>{ console.log(e) })
+
+}
+// ES6 - Promises
+function call(){
+    return axios()
+    .then(res=>{
+        return res.data
+    })
+    .catch(e=>{
+        console.log(e)
+    })
+}
+//ES7 - async/await
+async function call(){
+    try{
+        const res = await axios();
+        return res.data
+    }catch(e){
+        console.log(e)
+    }
+}
+
+// -------
+
+
+
+
 /*
 Callbacks x Promises x await
 */
