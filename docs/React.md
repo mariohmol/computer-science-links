@@ -80,21 +80,49 @@ React API
 
 First assignment: https://thinkster.io/tutorials/fundamentals-of-react-routing-with-react-router/exercise-broken-routing
 
+### React Rouer: Hooks 
+* https://blog.logrocket.com/using-hooks-with-react-router/
+
 ### Route params: 
 
 **Optional Params** https://www.digitalocean.com/community/tutorials/react-react-router-optional-parameters
 **Params v4 vs v5** https://reactgo.com/react-get-url-params/
 
 
-* Route History
-* Nested Routes
+### Route History
+* https://www.ojblabs.com/react-router-history/
 
 
-Assignment:
-https://restcountries.eu/
+### Nested Routes
+* https://ui.dev/react-router-v5-nested-routes/
+* https://reactgo.com/reactrouter/nestedrouting/
 
-* React Rouer: Hooks 
-** https://blog.logrocket.com/using-hooks-with-react-router/
+
+### Assignment React Router + API
+
+Using the API:
+* https://restcountries.eu/
+
+To fetch all the countries: https://restcountries.eu/rest/v2/all
+To fetch by region: https://restcountries.eu/rest/v2/region/europe
+
+Make an app where you have:
+**/countries**    (/countries)
+Will list all the countries
+
+**/countries/:region**
+Will list all the countries for the given region (/countries/northamerica)
+
+**/countries/:region/:country**
+Will list all the countries for the given region  (/countries/northamerica/usa)
+
+* On the left a menu to list all the regions (Africa, Americas, Asia, Europe, Oceania). Each region will have a link  
+* On the right you show the list of countries
+* IN the countires list, you have to have a button that as you click, you show the more details.
+
+![ImageRouter](./react/routerapi.png)
+
+
 
 * 
 Deploy
