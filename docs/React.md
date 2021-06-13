@@ -22,6 +22,9 @@ JSX:
 
 * https://reactjs.org/docs/fragments.html
 
+**Images**
+* https://reactgo.com/react-images/
+
 # Forms
 
 Easy:
@@ -72,6 +75,11 @@ Reducers:
 ## Validations
 
 * https://reactjs.org/docs/error-boundaries.html
+
+# API
+
+* https://reactjs.org/docs/faq-ajax.html
+* https://developer.mozilla.org/en-US/docs/Web/API/AbortController
 
 # Test
 
