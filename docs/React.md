@@ -107,14 +107,15 @@ To fetch all the countries: https://restcountries.eu/rest/v2/all
 To fetch by region: https://restcountries.eu/rest/v2/region/europe
 
 Make an app where you have:
+**/regions**    (/regions)
+Will list all the regions with links for countries/region
+
+Make an app where you have:
 **/countries**    (/countries)
 Will list all the countries
 
 **/countries/:region**
 Will list all the countries for the given region (/countries/northamerica)
-
-**/countries/:region/:country**
-Will list all the countries for the given region  (/countries/northamerica/usa)
 
 * On the left a menu to list all the regions (Africa, Americas, Asia, Europe, Oceania). Each region will have a link  
 * On the right you show the list of countries
@@ -124,9 +125,23 @@ Will list all the countries for the given region  (/countries/northamerica/usa)
 
 
 
-* 
-Deploy
-React Router App
+## Deployment
+
+Build Workflow: 
+* https://dev.to/amirmoh10/understanding-the-react-build-workflow-and-the-folder-structure-3hlc
+
+Environment Variables:
+* https://create-react-app.dev/docs/adding-custom-environment-variables/
+
+Deploy with Vercel:
+* https://vercel.com/guides/deploying-react-with-vercel-cra
+
+Deploy with Heroku:
+* https://blog.heroku.com/deploying-react-with-zero-configuration
+
+
+Assignment:
+Deploy the Countries/Regions app to Vercel or Heroku
 
 
 
