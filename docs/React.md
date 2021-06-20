@@ -68,7 +68,6 @@ Explain with examples:
 
 React API
 * https://blog.logrocket.com/react-reference-guide-hooks-api/
-*
 
 ## React Router
 
@@ -117,6 +116,9 @@ Will list all the countries
 **/countries/:region**
 Will list all the countries for the given region (/countries/northamerica)
 
+**/countries/:region/:countryname**
+This will show the details for one Country, like currencies, flag, name ... (/countries/southamerica/brazil)
+
 * On the left a menu to list all the regions (Africa, Americas, Asia, Europe, Oceania). Each region will have a link  
 * On the right you show the list of countries
 * IN the countires list, you have to have a button that as you click, you show the more details.
@@ -143,7 +145,13 @@ Deploy with Heroku:
 Assignment:
 Deploy the Countries/Regions app to Vercel or Heroku
 
+## Interview
 
+To prepare for a React Interview we will use the https://dummyapi.io/explorer
+1. Make a React App that will list the users based on the API
+2. Each user will have a Button that will make another request to get and show full details for one user
+
+![ImageRouter](./react/react-prep-interview.png)
 
 
 ## Hooks
@@ -176,22 +184,22 @@ Reducers:
 
 # Test
 
+Dummy tests with Snapshot:
 * https://reactjs.org/docs/test-renderer.html
 * https://www.valentinog.com/blog/testing-react/
 
-
+Testing checking components manually:
+* https://testing-library.com/docs/example-react-router/
 
 ## Smoke
 
-https://reactrouter.com/web/api/MemoryRouter
-https://medium.com/@mrsamczynski/react-router-memoryrouter-a-how-to-guide-a496318bf981
-
-# Portals
-
-* https://reactjs.org/docs/portals.html
+Testing if the components loads without an error
+* https://reactrouter.com/web/guides/testing
+* https://medium.com/@mrsamczynski/react-router-memoryrouter-a-how-to-guide-a496318bf981
 
 
 # Tutorials
 
 * https://github.com/Sanjeev-Thiyagarajan/PERN-STACK-YELP-CLONE
 * https://www.youtube.com/watch?v=J01rYl9T3BU&t=238s&ab_channel=freeCodeCamp.org
+* https://reactjs.org/docs/portals.html
