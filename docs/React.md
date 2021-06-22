@@ -25,6 +25,9 @@ JSX:
 **Images**
 * https://reactgo.com/react-images/
 
+High Order Functions
+* https://css-tricks.com/what-are-higher-order-components-in-react/
+
 # Forms
 
 Easy:
@@ -203,3 +206,7 @@ Testing if the components loads without an error
 * https://github.com/Sanjeev-Thiyagarajan/PERN-STACK-YELP-CLONE
 * https://www.youtube.com/watch?v=J01rYl9T3BU&t=238s&ab_channel=freeCodeCamp.org
 * https://reactjs.org/docs/portals.html
+
+# Interviews
+
+* https://github.com/sudheerj/reactjs-interview-questions
