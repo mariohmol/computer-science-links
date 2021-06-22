@@ -1,19 +1,20 @@
+# Replit
 
+Use replit to test JS as you learn:
+
+* https://replit.com/languages/JavaScript
 # Data Types
 
-NUmber 
+Read:
+* https://javascript.info/types
 
-String
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+* [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+* [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+* [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+* [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
-Arrays
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-Objects:
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
-
-Date:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+Exercise:
+* https://replit.com/@appbrewery/JS-Variables-Exercise
 
 # Logical
 
