@@ -14,13 +14,31 @@ Official docs for  [String](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 Exercise:
 * https://replit.com/@appbrewery/JS-Variables-Exercise
 
-# Logical
+
+Object:
+* https://javascript.info/object
+
+Array:
+* https://javascript.info/array
+
+
+## String Operations
+
+* https://www.w3schools.com/js/js_string_methods.asp
+* https://www.digitalocean.com/community/tutorials/how-to-index-split-and-manipulate-strings-in-javascript
+* Exercise: https://www.w3docs.com/exercise/javascript/41
+
+
+## Flow
+
+If Statements:
+* https://www.w3schools.com/jsref/jsref_if.asp
+Exercise: https://www.w3docs.com/exercise/javascript/97
+## Logical
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT
 
-
-
-# Conditionals
+## Conditionals
 
 Ternary:
 
