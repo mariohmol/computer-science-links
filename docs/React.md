@@ -150,9 +150,9 @@ Deploy the Countries/Regions app to Vercel or Heroku
 
 ## Interview
 
-To prepare for a React Interview we will use the https://dummyapi.io/explorer
+To prepare for a React Interview we will use the https://jsonplaceholder.typicode.com/
 1. Make a React App that will list the users based on the API
-2. Each user will have a Button that will make another request to get and show full details for one user
+2. Each user will have a Button that will make another request to get posts related to that user
 
 ![ImageRouter](./react/react-prep-interview.png)
 
@@ -187,19 +187,49 @@ Reducers:
 
 # Test
 
+## Snapshot test
+
+Testing if the components loads without an error
+* https://reactrouter.com/web/guides/testing
+
 Dummy tests with Snapshot:
-* https://reactjs.org/docs/test-renderer.html
 * https://www.valentinog.com/blog/testing-react/
+
+Simple snapshot
+```jsx
+import React from "react";
+import { create } from "react-test-renderer";
+
+function Button(props) {
+  return <button>Nothing to do for now</button>;
+}
+
+describe("Button component", () => {
+  test("Matches the snapshot", () => {
+    const button = create(<Button />);
+    expect(button.toJSON()).toMatchSnapshot();
+  });
+});
+```
+
+
+## Test With Router
 
 Testing checking components manually:
 * https://testing-library.com/docs/example-react-router/
 
-## Smoke
+Test with router:
+```jsx
+import { MemoryRouter } from 'react-router-dom'
 
-Testing if the components loads without an error
-* https://reactrouter.com/web/guides/testing
-* https://medium.com/@mrsamczynski/react-router-memoryrouter-a-how-to-guide-a496318bf981
-
+test('full app rendering/navigating', () => {
+  render(<MemoryRouter>
+            <App />
+        </MemoryRouter>)
+  // verify page content for expected route
+  expect(screen.getByText(/you are home/i)).toBeInTheDocument()
+})
+```
 
 # Tutorials
 
