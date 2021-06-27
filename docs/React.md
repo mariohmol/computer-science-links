@@ -231,6 +231,9 @@ test('full app rendering/navigating', () => {
 })
 ```
 
+CI
+* https://www.lambdatest.com/blog/build-your-first-ci-cd-pipeline-with-travis-ci/
+
 # Tutorials
 
 * https://github.com/Sanjeev-Thiyagarajan/PERN-STACK-YELP-CLONE
