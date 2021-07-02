@@ -50,7 +50,7 @@ Delete Data:
 
 ## Assignment
 
-Create a new database e Import the [postgres](./postgres/movie_database.sql)
+Create a new database e Import the [postgres](./postgres/movie_database.sql.zip)
 Do the following SQLs:
 
 1. Find all the movies
