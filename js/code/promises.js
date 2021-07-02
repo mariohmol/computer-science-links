@@ -179,3 +179,27 @@ q
 // after
 // inside
 // resolved
+
+
+/**
+ * Exercise: Get the users endpoint from http://jsonplaceholder.typicode.com ,
+ * and return an array with name and username
+ */
+const axios = require('axios')
+
+function getUsers(){
+  return axios('http://jsonplaceholder.typicode.com/users')
+  .then(response=>{
+    return response.data.map(user=>{
+      return ({
+        name: user.name,
+        username: user.username,
+      })
+    })
+  })
+}
+
+getUsers()
+.then(data=> {
+  console.log(data)
+})
