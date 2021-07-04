@@ -65,6 +65,19 @@ const server = app.listen(3000, function () {
 });
 ```
 
+
+
+## Middlewares
+
+* https://expressjs.com/en/resources/middleware
+- Main middlewares: BodyParser, cors, helmet, morgan
+
+CORS:
+* https://www.positronx.io/express-cors-tutorial/
+
+Tutorial:
+https://blog.logrocket.com/express-middleware-a-complete-guide/
+
 ## Router
 
 Express Router Methods:
@@ -111,4 +124,3 @@ app.use('/cars', cars)
 
 // ..
 ```
-
