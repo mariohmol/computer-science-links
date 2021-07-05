@@ -72,11 +72,14 @@ const server = app.listen(3000, function () {
 * https://expressjs.com/en/resources/middleware
 - Main middlewares: BodyParser, cors, helmet, morgan
 
+Tutorial:
+https://blog.logrocket.com/express-middleware-a-complete-guide/
+
 CORS:
 * https://www.positronx.io/express-cors-tutorial/
 
-Tutorial:
-https://blog.logrocket.com/express-middleware-a-complete-guide/
+Error:
+* https://codeforgeek.com/error-handling-in-express-using-middleware/
 
 ## Router
 
