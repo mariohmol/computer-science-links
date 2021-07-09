@@ -1,16 +1,17 @@
 ## Instalation
 
 ```sh
+# To install
+brew install postgresql
 
-  To migrate existing data from a previous major version of PostgreSQL run:
-  brew postgresql-upgrade-database
+# To migrate existing data from a previous major version of PostgreSQL run: brew postgresql-upgrade-database
 
-To have launchd start postgresql now and restart at login:
-  brew services start postgresql
-Or, if you don't want/need a background service you can just run:
-  pg_ctl -D /usr/local/var/postgres start
-  
-  ```
+# To have launchd start postgresql now and restart at login:
+brew services start postgresql
+
+# Or, if you don't want/need a background service you can just run: 
+pg_ctl -D /usr/local/var/postgres start
+```
 
 Create the db
 
@@ -48,18 +49,30 @@ Delete Data:
 * https://www.postgresqltutorial.com/postgresql-delete/
 
 
+Import and Export Data:
+* https://www.prisma.io/dataguide/postgresql/inserting-and-modifying-data/importing-and-exporting-data-in-postgresql
+
 ## Assignment
 
-Create a new database e Import the [postgres](./postgres/movie_database.sql.zip)
+Create a new database, download the [Movie Database](./postgres/movie_database.sql.zip) and unzip it
+Import the database using in your terminal in the folder where has the unzip file:
+```sh
+psql movie < movie_database.sql
+```
+
 Do the following SQLs:
 
 1. Find all the movies
-2. Find all the movies by actor George Hardy
-3. Find all movies by genre Comedy
-4. Find all movies by genre Comedy and Rating greater than 2
-5. Count all the movies
-6. Count all the movies by genre Comedy
+2. Find all movies by genre Comedy
+3. Find all movies by genre Comedy and Rating greater than 2
+4. Count all the movies
+5. Count all the movies from genre Comedy
+6. Find name and rating for movies with Rating greater than 3
 7. Count total movies by genre
-8. Create a new Table called Rating, that will hold the movie_id and a rating
+8. Create a new Table called rating, that will hold the movie_id and a rating
 9. Insert 3 new movies
 10. Update all the movies that has Rating = 0 to be Rating = 1
+11. Find all the movies name by actor George Hardy
+
+
+You can find the solution. 
