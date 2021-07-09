@@ -1,0 +1,6 @@
+const express =  require('express')
+const companiesRouter = require('./companies/companies.routes')
+const app = express()
+app.use(express.json())
+app.use('/companies', companiesRouter)
+app.listen(8080, ()=>console.log('Started 8080'))

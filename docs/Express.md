@@ -78,8 +78,24 @@ https://blog.logrocket.com/express-middleware-a-complete-guide/
 CORS:
 * https://www.positronx.io/express-cors-tutorial/
 
-Error:
+JSONParse:
+```js
+// Json Parser Middleware
+app.use(express.json())
+// Browser send a String like
+let body = `{ "name": "mario" }`
+// Converts to an object
+const bodyParsed = { name: 'mario' }
+// So you can access the body like
+req.body.name 
+```
+
+CatchAll / Error:
 * https://codeforgeek.com/error-handling-in-express-using-middleware/
+
+Simple Custom Middleware:
+* https://www.digitalocean.com/community/tutorials/nodejs-creating-your-own-express-middleware
+* http://expressjs.com/en/guide/writing-middleware.html (Official)
 
 ## Router
 
@@ -127,3 +143,8 @@ app.use('/cars', cars)
 
 // ..
 ```
+
+
+## Controller / Routes
+
+Check the folder express/controllers-app
