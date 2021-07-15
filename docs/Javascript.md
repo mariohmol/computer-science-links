@@ -1,8 +1,20 @@
-# Replit
+# Set up
+
+Create an account at [GitHub](github.com)
+
+
+Install:
+
+* [VSCode](https://code.visualstudio.com/)
+* [Git](https://git-scm.com/downloads)
+* [GitHub Desktop](https://desktop.github.com/)
+
 
 Use replit to test JS as you learn:
 
 * https://replit.com/languages/JavaScript
+
+
 # Data Types
 
 Read:
