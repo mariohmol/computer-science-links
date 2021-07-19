@@ -29,6 +29,14 @@ Make a seed process for city and add 3 cities (NY, LA, Washginton)
 
 Remember to configure on knexfile.js to have your local postgres credentials (database: 'school', user: postgres, pass...)
 
+```sh
+knex init
+# Open the knexfile.js, delete the development,stagind and let the produtcion
+# Configure to have your user (try postgres or your machine user),dbname and password
+knex migrate:make students
+knex migrate:latest
+```
+
 Create a file called queries.js to have those methods. Use the knexcheatsheet to help you.
 Create one express route for each query, that will return the data as asked.
 
