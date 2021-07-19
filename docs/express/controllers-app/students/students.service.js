@@ -4,7 +4,7 @@ const StudentsService = {
         return db('students').select('*')
     },
     getStudent: (db, id) => {
-        return db('students').select('*').where({id})
+        return db('students').select('*').where({id}).first()
     },
     createStudent: (db, student) => {
         return db('students').insert(student)
@@ -14,7 +14,7 @@ const StudentsService = {
         return db('students').where({id}).update(student)
     },
     deleteStudent: (db, id) => {
-        return db('students').select('*')
+        return db('students').where({id}).del()
     },
 }
 
