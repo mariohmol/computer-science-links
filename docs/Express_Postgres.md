@@ -37,6 +37,8 @@ knex migrate:make students
 knex migrate:latest
 ```
 
+Make the connection to the database in the index.js and set on the App.
+
 Create a file called queries.js to have those methods. Use the knexcheatsheet to help you.
 Create one express route for each query, that will return the data as asked.
 
