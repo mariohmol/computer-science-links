@@ -44,7 +44,7 @@ async function list(req, res, next) {
     res.json(students)
 }
 
-async async function update(req, res, next) {
+async function update(req, res, next) {
     const { name, email, phone } = req.body
     const found = {
         id: req.params.id,

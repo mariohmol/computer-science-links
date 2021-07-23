@@ -1,0 +1,20 @@
+{
+  "name": "controllers-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.7",
+    "pg": "^8.6.0"
+  },
+  "engines": {
+    "node": "8"
+  }
+}
