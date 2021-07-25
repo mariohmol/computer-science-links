@@ -34,6 +34,9 @@ async function read(req, res, next) {
     const db = req.app.get('db')
     const id = parseInt(req.params.id)
     const student = await StudentsService.getStudent(db, id)
+    if(!student){
+        return res.sendStatus(404)
+    }
     res.json(student)
 }
 
@@ -46,12 +49,12 @@ async function list(req, res, next) {
 
 async function update(req, res, next) {
     const { name, email, phone } = req.body
+    const id = req.params.id
     const found = {
-        id: req.params.id,
         name, email, phone
     }
     const db = req.app.get('db')
-    const student = await StudentsService.updateStudent(db, found)
+    const student = await StudentsService.updateStudent(db,id, found)
     res.json(student)
 }
 

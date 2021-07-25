@@ -9,7 +9,7 @@ const StudentsService = {
     createStudent: (db, student) => {
         return db('students').insert(student)
     },
-    updateStudent: (db, student) => {
+    updateStudent: (db, id, student) => {
         const {id} = student;
         return db('students').where({id}).update(student)
     },
