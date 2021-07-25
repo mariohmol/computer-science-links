@@ -4,4 +4,5 @@ const db = require('knex')(connection);
 // creates local db var 
 app.set('db', db);
 
-app.listen(8080, ()=>console.log('Started 8080'))
+// Port necessary so Heorku can choose what port to start the server
+app.listen(process.env.PORT || 8080, ()=>console.log('Started 8080'))
