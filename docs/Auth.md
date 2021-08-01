@@ -1,4 +1,29 @@
-JWT
+# JWT
+
+* https://jwt.io/
+
+
+Charts in the begin explaiing the flow:
+* https://www.bezkoder.com/node-js-jwt-authentication-mysql/
+
+
+## Simple example / Using passport
+
+* https://www.digitalocean.com/community/tutorials/nodejs-jwt-expressjs
+
+Here show screenshots using postman to test:
+* https://jonathanmh.com/express-passport-json-web-token-jwt-authentication-beginners/
+
+## JWT in Details
+
+* https://betterprogramming.pub/a-practical-guide-for-jwt-authentication-using-nodejs-and-express-d48369e7e6d4
+## With React
+
+* https://jasonwatmore.com/post/2018/08/06/nodejs-jwt-authentication-tutorial-with-example-api#running-react
+
+
+
+## Body Examples
 
 Local Auth 
 POST /auth/login (refresh token)

@@ -61,3 +61,8 @@ Ternary:
 # Advanced:
 
 * Regex: https://regex101.com/
+
+## Exercises:
+
+* https://practity.com/582-2/
+* https://www.jshero.net/en/success.html
