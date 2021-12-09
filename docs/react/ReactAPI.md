@@ -16,10 +16,10 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
 
 useEffect(()=>{
-fetch('https://jsonplaceholder.typicode.com/posts/'+post.id+'/comments')
+fetch('https://jsonplaceholder.typicode.com/posts/'+selectedPost+'/comments')
 .then(res=>res.json())
 .then(data=>setComments(data))
-},post)
+},[selectedPost])
 
 
 return <>
